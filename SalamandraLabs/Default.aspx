@@ -23,7 +23,7 @@
         <a href="Page.aspx?Tag=sp">System Programing</a>
         <a href="Page.aspx?Tag=etc">Etc</a>
         <a href="About.aspx">About</a>
-        <a href="Admin.aspx">Admin</a>
+        <a href="Login.aspx" style="float:right">Login</a>
     </div>
 
     <div class="w3-container w3-black w3-center w3-allerta">

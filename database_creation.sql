@@ -34,3 +34,5 @@ insert into chapters values ('cpp','C++')
 insert into chapters values ('net','Networks')
 insert into chapters values ('sp','System Programing')
 insert into chapters values ('etc','Etc')
+
+select * from users

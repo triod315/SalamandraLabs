@@ -34,3 +34,27 @@ body {
     background-color: #4CAF50;
     color: white;
   }
+
+p.login{
+  text-align: center;
+  font-size: 16pt;
+  font-family: "Allerta Stencil", Sans-serif;
+}
+
+.login_textbox{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14pt;
+  width: 300px;
+  text-align: center; 
+}
+.login_button{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14pt;
+  width: 200px;
+  text-align: center; 
+  margin-top: 15px;
+}
