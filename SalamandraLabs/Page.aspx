@@ -30,22 +30,23 @@
     </div>
 
     <div class="w3-container w3-black w3-center w3-allerta">
-            <p class="w3-xxxlarge">
+            <!--<p class="w3-xxxlarge">
                 Salamandra           
-            </p>
-            <p class="w3-xxlarge">
+            </p>-->
+        <asp:Label ID="Label1" runat="server" Text="Label" style="display:block; margin-left:auto;margin-right:auto;text-align:center;font-size:26pt;"></asp:Label>
+       
+            <!--<p class="w3-xxlarge">
                 The web site is under construction
             </p>
             <p class="w3-xlarge">
                 triod315@gmail.com
-            </p>
+            </p>-->
         </div>
 
 
     <form id="form1" runat="server">
         <div>
-            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-        </div>
+             </div>
     </form>
 </body>
 </html>
