@@ -5,6 +5,7 @@ drop table users
 create table users(
 	nikname nvarchar(255) primary key,
 	name nvarchar(max),
+	email varchar(max),
 	password nvarchar(max)
 );
 
@@ -36,3 +37,4 @@ insert into chapters values ('sp','System Programing')
 insert into chapters values ('etc','Etc')
 
 select * from users
+select * from articles

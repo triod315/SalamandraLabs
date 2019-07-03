@@ -58,3 +58,40 @@ p.login{
   text-align: center; 
   margin-top: 15px;
 }
+
+.whoareyou{
+  margin: 3%;
+  background-color: lightgray;
+  width: 40%;
+  float: left;
+}
+
+.new_article{
+  margin: 3%;
+  background-color: lightgray;
+  width: 45%;
+  float: right;
+}
+
+.narticle{
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 14pt;
+  font-family: "Allerta Stencil", Sans-serif;
+}
+
+.crtextbox{
+  width: 85%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.crbutton{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%; 
+  margin-bottom: 15px;
+}
