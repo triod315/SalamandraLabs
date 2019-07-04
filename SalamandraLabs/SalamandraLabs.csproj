@@ -67,19 +67,36 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="404.aspx" />
     <Content Include="Admin.aspx" />
+    <Content Include="Articles.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="Page.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="404.aspx.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="404.aspx.designer.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin.aspx.cs">
       <DependentUpon>Admin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Admin.aspx.designer.cs">
       <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Article.cs" />
+    <Compile Include="Articles.aspx.cs">
+      <DependentUpon>Articles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Articles.aspx.designer.cs">
+      <DependentUpon>Articles.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

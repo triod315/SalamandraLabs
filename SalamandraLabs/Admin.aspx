@@ -6,9 +6,10 @@
 <head runat="server">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Salmandra admin</title>
-    <link rel="stylesheet" href="style.css" />
+    
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil"/>
+    <link rel="stylesheet" href="style.css" /> 
 </head>
 <body>
     <form id="form1" runat="server">

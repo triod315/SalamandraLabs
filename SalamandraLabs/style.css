@@ -2,9 +2,14 @@
     font-family: "Allerta Stencil", Sans-serif;
 }
 
-div{
-    height: 100%;
+.pagecontent{
+  box-sizing: unset !important;
+  overflow: scroll !important;
+  height: 1000px !important; 
+  background-color: black !important;
 }
+
+
 
 body {
     margin: 0;
@@ -94,4 +99,66 @@ p.login{
   margin-right: auto;
   width: 40%; 
   margin-bottom: 15px;
+}
+
+.artdiv{
+  margin:2%;
+  height: 120px;
+  background-color: lightgray;
+}
+
+.artdiv:hover{
+  background-color: darkgray;
+}
+
+
+
+.arttitle{
+  padding-left: 3%;
+  padding-top: 1%;
+  margin: 0%;
+  text-align: left;
+  font-size: 18pt;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.artauth{
+  margin:0 !important;
+  width: 40%;
+  float: left;
+  padding: 3%;
+  padding-top: 1%;
+  text-align: left;
+  font-size: 14pt;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.artdate{
+  margin:0 !important;
+  width: 40%;
+  float: right;
+  padding-top: 1%;
+  text-align: left;
+  font-size: 14pt;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+hr{
+  margin:0.5% !important;
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 98%;
+}
+
+a{
+  text-decoration: none;
+}
+
+.footer {
+  /*position: fixed;*/
+  left: 0;
+  /*bottom: 0;*/
+  width: 100%;
+  text-align: center;
 }
