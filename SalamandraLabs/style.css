@@ -19,6 +19,10 @@ body {
   .topnav {
     overflow: hidden;
     background-color: #333;
+
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
   }
   
   .topnav a {
@@ -111,7 +115,44 @@ p.login{
   background-color: darkgray;
 }
 
+.artpagediv{
+  
+  margin:2%;
+  margin-top: 6%;
+  height: 300px;
+  background-color: lightgray;
+}
 
+.sollink{
+  padding-top: 1.5%;
+  padding-left: 3%;
+  width: 70%;
+  font-size: 12pt;
+  
+}
+
+.sollink:hover{
+  color: darkgrey;
+  
+}
+
+.filesbutt{
+  margin-top: 2%;
+  margin-left: 3%;
+  width: 20%;
+  font-size: 14pt;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+  padding-top: 1%;
+  padding-bottom: 1%;
+  text-align: center;
+  background-color: darkslategray;
+  color: white;
+}
+
+.filesbutt:hover{
+  background-color: darkgreen;
+}
 
 .arttitle{
   padding-left: 3%;

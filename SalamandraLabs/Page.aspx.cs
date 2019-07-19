@@ -93,6 +93,12 @@ namespace SalamandraLabs
                 addArticles();
             }
 
+            System.Web.UI.HtmlControls.HtmlGenericControl footerDiv = new System.Web.UI.HtmlControls.HtmlGenericControl("DIV");
+            footerDiv.Attributes["class"] = "footer";
+            footerDiv.InnerHtml = @"<hr />
+        <p>triod315 &copy; 2019 <a href=" + "\"http:\\\\salamandra.somee.com\">salamandra.somee.com</a></p>";
+            this.Controls.Add(footerDiv);
+
             //Label1.Text = Request.QueryString["Tag"];
         }
     }

@@ -73,6 +73,30 @@ namespace SalamandraLabs
             return articles;
         }
 
+        public static Article getArticleByID(string id)
+        {
+            List<Article> articles = new List<Article>();
 
+            using (SqlConnection conn = new SqlConnection(DB))
+            {
+                conn.Open();
+                string qurey = $"select * from articles where id='{id}'";
+                SqlCommand command = new SqlCommand(qurey, conn);
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    articles.Add(new Article(reader[0].ToString(), reader[1].ToString(), reader[2].ToString(), reader[3].ToString(), reader[4].ToString(), reader[5].ToString(), reader[6].ToString(), reader[7].ToString(), reader[8].ToString()));
+                }
+            }
+
+            try
+            {
+                return articles[0];
+            }
+            catch (Exception e)
+            {
+                return null;
+            }
+        }
     }
 }

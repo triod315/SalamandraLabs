@@ -14,8 +14,8 @@
 <body>
 
     <div class="topnav">
-        <a class="active" href="~/">Home</a>
-        <a href="Page.aspx?Tag=c#">C#</a>
+        <a class="active" href="/">Home</a>
+        <a href="Page.aspx?Tag=csh">C#</a>
         <a href="Page.aspx?Tag=python">Python</a>
         <a href="Page.aspx?Tag=linux">Linux/Unix</a>
         <a href="Page.aspx?Tag=cpp">C++</a>

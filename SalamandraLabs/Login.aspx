@@ -31,5 +31,7 @@
         <asp:Button ID="Button2" runat="server" Text="Register" CssClass="login_button"/>
     </form>
     
+   
+        
 </body>
 </html>

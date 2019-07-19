@@ -15,7 +15,11 @@ namespace SalamandraLabs
         public static string username;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            System.Web.UI.HtmlControls.HtmlGenericControl footerDiv = new System.Web.UI.HtmlControls.HtmlGenericControl("DIV");
+            footerDiv.Attributes["class"] = "footer";
+            footerDiv.InnerHtml = @"<hr />
+        <p>triod315 &copy; 2019 <a href=" + "\"http:\\\\salamandra.somee.com\">salamandra.somee.com</a></p>";
+            this.Controls.Add(footerDiv);
         }
 
         protected void Button1_Click(object sender, EventArgs e)

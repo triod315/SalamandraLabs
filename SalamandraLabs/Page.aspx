@@ -18,7 +18,7 @@
     
      <div class="topnav">
         <a href="/">Home</a>
-        <a href="Page.aspx?Tag=c#">C#</a>
+        <a href="Page.aspx?Tag=csh">C#</a>
         <a href="Page.aspx?Tag=python">Python</a>
         <a href="Page.aspx?Tag=linux">Linux/Unix</a>
         <a href="Page.aspx?Tag=cpp">C++</a>
@@ -48,5 +48,17 @@
         <div>
              </div>
     </form>
+
+    <div class="w3-container w3-black w3-center w3-allerta">
+            <p class="w3-xxxlarge">
+                Salamandra           
+            </p>
+            <p class="w3-xxlarge">
+                The web site is under construction
+            </p>
+            <p class="w3-xlarge">
+                triod315@gmail.com
+            </p>
+        </div>
 </body>
 </html>
