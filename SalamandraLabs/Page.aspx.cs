@@ -82,7 +82,7 @@ namespace SalamandraLabs
                 SqlDataReader reader = command.ExecuteReader();
                 if (reader.Read())
                 {
-                    Label1.Text = reader[0].ToString();
+                    Label2.Text +=": "+ reader[0].ToString();
                 }
                 else
                 {

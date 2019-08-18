@@ -2,6 +2,17 @@
     font-family: "Allerta Stencil", Sans-serif;
 }
 
+.postedadminpagecontent{
+  box-sizing: unset !important;
+  overflow-y: scroll !important;
+  height: 60vh;
+  display: block;
+  scroll-behavior: auto;
+  width: 45%;
+  margin: 3%;
+  overflow-x: hidden;
+}
+
 .pagecontent{
   box-sizing: unset !important;
   overflow: scroll !important;
@@ -75,7 +86,19 @@ p.login{
   float: left;
 }
 
-.new_article{
+.postedarticles
+{
+  box-sizing: unset !important;
+  overflow-y: scroll !important;
+  height: 60vh;
+  display: block;
+  scroll-behavior: auto;
+  width: 48%;
+  margin: 3%;
+  overflow-x: auto;
+}
+
+.new_articles{
   margin: 3%;
   background-color: lightgray;
   width: 45%;

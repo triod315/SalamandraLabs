@@ -45,20 +45,11 @@
 
 
     <form id="form1" runat="server">
-        <div>
-             </div>
+        <div class="w3-container w3-black w3-center w3-allerta">
+            <asp:Label ID="Label2" runat="server" Text="Salamandra" CssClass="w3-xxlarge" style="padding-bottom:2%;"></asp:Label>
+        </div>
     </form>
 
-    <div class="w3-container w3-black w3-center w3-allerta">
-            <p class="w3-xxxlarge">
-                Salamandra           
-            </p>
-            <p class="w3-xxlarge">
-                The web site is under construction
-            </p>
-            <p class="w3-xlarge">
-                triod315@gmail.com
-            </p>
-        </div>
+    
 </body>
 </html>

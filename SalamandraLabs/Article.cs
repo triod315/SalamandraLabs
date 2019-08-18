@@ -98,5 +98,25 @@ namespace SalamandraLabs
                 return null;
             }
         }
+
+        public static List<Article> getArticleByAuthor(string author)
+        {
+            List<Article> articles = new List<Article>();
+
+            using (SqlConnection conn = new SqlConnection(DB))
+            {
+                conn.Open();
+                string qurey = $"select * from articles where author='{author}'";
+                SqlCommand command = new SqlCommand(qurey, conn);
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    articles.Add(new Article(reader[0].ToString(), reader[1].ToString(), reader[2].ToString(), reader[3].ToString(), reader[4].ToString(), reader[5].ToString(), reader[6].ToString(), reader[7].ToString(), reader[8].ToString()));
+                }
+            }
+
+
+            return articles;
+        }
     }
 }

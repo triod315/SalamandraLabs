@@ -29,7 +29,9 @@
                 <asp:Label ID="Label4" runat="server" Text="email"></asp:Label>
             </div>
 
-            <div class="new_article">
+         
+
+            <div class="new_articles">
                 <p class="narticle">Create article</p>
                 <p class="narticle">Name</p>
                 <asp:TextBox ID="TextBox1" runat="server" CssClass="crtextbox"></asp:TextBox>
@@ -48,6 +50,10 @@
                 <asp:TextBox ID="TextBox5" runat="server" CssClass="crtextbox" TextMode="Url"></asp:TextBox>
                 <br />
                 <asp:Button ID="Button1" runat="server" Text="Create" CssClass="crbutton" OnClick="Button1_Click"/>
+            </div>
+
+            <div class="postedarticles">
+                <asp:Table ID="Table1" runat="server"></asp:Table>    
             </div>
         </div>
     </form>

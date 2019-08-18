@@ -27,15 +27,10 @@
     </div>
 
     <div class="w3-container w3-black w3-center w3-allerta">
-            <p class="w3-xxxlarge">
+            <p class="w3-xxxlarge" style="padding:5%;">
                 Salamandra           
             </p>
-            <p class="w3-xxlarge">
-                The web site is under construction
-            </p>
-            <p class="w3-xlarge">
-                triod315@gmail.com
-            </p>
+          
         </div>
 
     <form id="form1" runat="server">
