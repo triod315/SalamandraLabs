@@ -91,7 +91,6 @@ namespace SalamandraLabs
                 }
             }
         }
-
         private void loadInfo()
         {
             using (SqlConnection conn = new SqlConnection(DB))
@@ -145,7 +144,7 @@ namespace SalamandraLabs
             //}
             //this.Controls.Add(conDiv);
 
-            int TableWidth = 450;
+            int TableWidth = 440;
 
 
             Table1.Width = TableWidth /*+ 3 * GalTableField.ButtonsWidth*/;
@@ -197,7 +196,7 @@ namespace SalamandraLabs
                 tr2.Cells.Add(td2);
 
                 TableCell td3 = new TableCell();
-                articles[i].Delete.Command += new CommandEventHandler(viewRecord);
+                articles[i].Delete.Command += new CommandEventHandler(deleteRecord);
                 articles[i].Delete.CssClass = "DynamicButtons";
 
                 td3.Controls.Add(articles[i].Delete);
@@ -209,11 +208,20 @@ namespace SalamandraLabs
 
         void viewRecord(object sender, CommandEventArgs e)
         {
-
+            Response.Redirect($"~/Articles.aspx?id={e.CommandArgument.ToString().Split('|')[0]}");
         }
 
         void deleteRecord(object sender, CommandEventArgs e)
         {
+            using (SqlConnection conn = new SqlConnection(DB))
+            {
+                conn.Open();
+                string query = $"delete from articles where id={e.CommandArgument.ToString().Split('|')[0]}";
+
+                SqlCommand command = new SqlCommand(query, conn);
+                command.ExecuteNonQuery();
+            }
+            Response.Redirect("~/Admin.aspx");
 
         }
         private void addPostedArticle(Article article)

@@ -31,6 +31,15 @@ namespace SalamandraLabs
 
             artDiv.Controls.Add(hr);
 
+            //add article text
+
+            System.Web.UI.HtmlControls.HtmlGenericControl solllabel1 = new System.Web.UI.HtmlControls.HtmlGenericControl("DIV");
+            solllabel1.Attributes["class"] = "soltext";
+            solllabel1.InnerHtml=article.task;
+
+            
+            artDiv.Controls.Add(solllabel1);
+
             //add solution link
 
             System.Web.UI.HtmlControls.HtmlGenericControl solllabel = new System.Web.UI.HtmlControls.HtmlGenericControl("DIV");
@@ -106,7 +115,7 @@ namespace SalamandraLabs
             this.Controls.Add(conDiv);
 
             System.Web.UI.HtmlControls.HtmlGenericControl footerDiv = new System.Web.UI.HtmlControls.HtmlGenericControl("DIV");
-            footerDiv.Attributes["class"] = "footer";
+            footerDiv.Attributes["class"] = "pfooter";
             footerDiv.InnerHtml = @"<hr />
         <p>triod315 &copy; 2019 <a href=" + "\"http:\\\\salamandra.somee.com\">salamandra.somee.com</a></p>";
             this.Controls.Add(footerDiv);
